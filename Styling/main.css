@@ -1,0 +1,687 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p {
+    color:#666666;
+}
+.boldparagraph{
+    font-weight: bold;
+    padding-top: 5px;
+    
+}
+h1, h2 {
+    color:#2F2F2F;
+}
+p, h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #EDEDED;
+}
+body header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    min-height: 65px;
+    max-height: 7vh;
+    border-bottom: solid 1px #666666;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+
+
+}
+button a{
+    text-decoration: none;
+}
+/* ---------------- Home logo -------------- */
+body header a {
+    height: 60px;
+}
+body header a img{
+    height: 100%;
+    width: auto;
+}
+/* ---------------- Main body ----------- */ 
+main{
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto 10vw auto 10vw;
+}
+main hr{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+}
+
+/* --------- spørgsmålogsvar ----------- */
+.spørgsmålogsvar{
+    margin: auto 10vw 10vw 10vw;
+}
+/*----------- Boligerside ---------- */
+.boligerside{
+    flex-direction: row;
+    margin: auto 2vw auto 2vw;
+    align-items: flex-start;
+}
+.rum-value-container{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 20vw;
+}
+.checkboxstructure, .siblingstructure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    font-size: 1.3rem;
+    
+}
+.siblingstructure{
+    cursor: pointer;
+}
+.siblingstructure img{
+    width: 8mm;
+}
+.filtersection section ul li input{
+    cursor: pointer;
+}
+input[type=checkbox]{
+    width: 8mm;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 8mm;
+    border: 0.6mm solid black;
+    border-radius: 6px;
+}
+input[type=checkbox]:checked {
+    /* background-color: lightblue; */
+}
+input[type=checkbox]:checked:after {
+    margin-left: 2.2mm;
+    margin-top: -0.mm;
+    width: 2mm;
+    height: 5mm;
+    border: solid black;
+        border-top-width: medium;
+        border-right-width: medium;
+        border-bottom-width: medium;
+        border-left-width: medium;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-width: 0 1mm 1mm 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: "";
+    display: inline-block;
+}
+input[type=range]{
+    width: 100%;
+}
+/*------------- Søgefelt ------------ */
+.searchfield{
+    background-image: url('../svg/search.svg');
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: 98% center;
+    width: 60vw;
+    margin: 5vh auto 5vh auto;
+    border-radius: 20px;
+    padding: 20px;
+    border: 0.5px solid rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+}
+.searchfield::placeholder{
+    font-size: 20px;
+}
+main .forsidetitels{
+    margin: auto;
+    text-align: center;
+}
+.searchbuttons{
+    margin: auto;
+    padding-bottom: 5vh;
+    text-align: center;
+}
+.searchbuttons button{
+    background-color: #92BA17;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 140px;
+    height: 60px;
+    margin: 5px;
+}
+.hovertransform{
+    transition: transform .2s;
+}
+.hovertransform:hover{
+    transform: scale(1.1);
+}
+.area{
+    color: #FFFFFF;
+}
+
+/*--------------- kort ventetid sektion ------------ */
+.boligmulighed{
+    width: 19vw;
+    background: #ffffff;
+    cursor: pointer;
+    margin: 2vw 2vw 10px 2vw;
+    display: inline-block;
+    border-radius: 10px;
+}
+.boligpris{
+    text-align: end;
+    font-size: 1.4rem;
+    padding: 5px;
+}
+.boligmulighed a{
+    text-decoration: none;
+}
+.none {
+    display: none;
+}
+.boligmulighed img {
+    width: 100%;
+    height: 70%;
+}
+.kortventetid{
+    display: flex;
+    margin: auto;
+    padding-bottom: 4vh;
+    padding-top: 4vh;
+}
+.boligprev, .bolignext{
+    width: 20px;
+cursor: pointer;
+padding: 0 10px 0 10px;
+
+}
+.boligprev:hover,.bolignext:hover{
+    opacity: 100%;
+}
+.slider__button-previous_two, .slider__button-next_two  {
+    background: #fafafa;
+    border-radius: 25px;
+    opacity: 75%;
+  }
+/* ---------- Boligbilleder slider_two ---------- */
+.boligbilleder{
+    display: flex;
+    margin: auto;
+    position: relative;
+    height: 35vh;
+}
+.boligbilleder_indhold{
+
+}
+.boligbilleder_indhold img{
+    width: 100%;
+    height: 100%;
+}
+.boligbilleder .boligprev{
+    position: absolute;
+    left: 0;
+}
+.boligbilleder .bolignext{
+    position: absolute;
+    right: 0;
+}
+.boligbilleder .bolignext, .boligprev{
+    top: 40%;
+}
+.boligmulighed_indhold{
+    margin: unset;
+    padding-top: 7vh;
+}
+ 
+/*------------ Footer -------------- */
+footer{
+    display: flex;
+    width: 100%;
+    background-color: #fafafa;
+    font-size: 0.9rem;
+    justify-content: space-evenly;
+}
+footer article{
+    margin: 10px;
+}
+/*--------------- Kontakt/Nyheder ----------------*/
+.containerQER{
+    display: flex;
+    padding-bottom: 4vh;
+}
+.nyheder , .kontakt{
+    width: 33vw;
+    height: 30vh;
+    background-color: #fafafa;
+    margin: auto;
+    border-radius: 15px;
+}
+.nyheder{
+    margin: auto 10px auto auto;
+}
+.kontakt{
+    margin: auto auto auto 10px;
+}
+.nyheder h1, .kontakt h1, .kontakt p{
+    text-align: center;
+    padding-bottom: 13px;
+}
+.kontakt section{
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+.kontakt section p{
+    width: 50%;
+}
+.kontakt section img {
+    margin: 5%;
+}
+.nyheder a{
+    display: block;
+    padding-left: 20px;
+}
+
+/*-------------- Login ----------------- */
+.login {
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+}
+.login img{
+    margin-right: 1.5vw;
+}
+.login p{
+    margin: auto 10px auto auto;
+    font-size: 1.3rem;
+}
+
+/*-------------- Burger ikon -------------- */
+
+.burger {
+    cursor: pointer;
+    margin-right: 2vw;
+}
+
+.burger span{
+    display: block;
+width: 40px;
+height: 2px;
+margin: 10px;
+background-color: #666666;
+position: relative;
+top: 0;
+transition: all .3s ease-in-out;
+}
+
+.burger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.open span:nth-child(1) {
+    transform-origin: center;
+    transform: rotate(45deg);
+    top: 14px;
+}
+
+.burger.open span:nth-child(3) {
+    transform-origin: center;
+    transform: rotate(-45deg);
+    top: -10px;
+}
+/* -------------- Burger menu ---------- */
+header .menu {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    right: -100%;
+    height: 93vh;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px #666666;
+    transition: all .3s ease-in-out;
+    min-width: 22vw;
+}
+.menu.active{
+    display: block;
+    right: -1px;
+}
+
+header nav li{
+    list-style-type: none;
+    padding: 2vh;
+    border-bottom: solid 1px #666;
+    text-align: end;
+}
+header .menu li a{
+    text-decoration: none;
+    color: #666666;
+}
+/* mobil boligside options */
+.mobilfilter{
+    background: #FAFAFA;
+    position: absolute;
+    z-index: 1;
+    top: 101%;
+    width: 100%;
+    text-align: center;
+    border: none;
+    height: 9vh;
+    display: none;
+    border-bottom: solid 1px #666666;
+}
+.mobilfilter.focus{
+    background-color: #52A1E6;
+}
+.whitefont{
+    color: #ffffff;
+}
+.filtercontainer{
+
+}
+.filtercontainer.closed{
+    display: none;
+}
+.arrow.closedarrow{
+rotate: 180deg;
+}
+/* ------------- Login screen ---------- */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0; 
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(70, 70, 70, 0.5);
+    animation: fade 1s;
+   }
+.modalIndhold{
+    position: relative;
+background-color: #fafafa;
+margin: 20vh auto;
+padding: 20px;
+
+max-width: 350px;
+height: 60vh;
+display: flex;
+justify-content: center;
+flex-direction: column;
+border-radius: 35px;
+}
+.modalIndhold .logintitle{
+    text-align: center;
+    margin-bottom: auto;
+    font-size: 2rem;
+}
+.modalIndhold input{
+    border: 0.5px solid rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 35px;
+   background: #FFFFFF;
+   height: 45px;
+   margin: 10px;
+   padding: 15px;
+}
+.modalIndhold button{
+    border: 0.5px solid rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 25px;
+    cursor: pointer;
+}
+.modalIndhold button h1{
+    font-size: 2rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+.modalIndhold .loginbutton {
+    background: #ffffff;
+    margin: auto 40px 15px 40px;
+}
+.modalIndhold .tilmeldbutton{
+    background:#92BA17;
+    margin: 4px 40px 15px 40px;
+}
+.tilmeldbutton h1{
+    color: #FFFFFF;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ------------- Brugerside boliger --------------- */
+.brugersideboliger{
+    display: flex;
+    margin: auto auto 10vh auto;
+}
+.brugerheadline{
+    text-align: center;
+}
+.buttoncontainerbruger{
+    display: flex;
+}
+.jabutton, .nejbutton, .købutton{
+    margin: auto;
+    width: 8vw;
+    height: 5vh;
+    border: none;
+    cursor: pointer;
+}
+.jabutton h1, .nejbutton h1, .købutton h1{
+    font-weight: normal;
+}
+.jabutton{
+background: #92BA17;
+}
+.jabutton h1{
+    color: #FFFFFF;
+    font-weight: normal;
+}
+.nejbutton{
+background: #CECECE;
+}
+.købutton{
+    background: #52A1E6;
+}
+.købutton h1{
+    color: #ffffff;
+    font-weight: normal;
+}
+/* ----------------- søgboligcontainer ----------- */
+.søgboligcontainer{
+display: inline-block;
+}
+/* ---------------- filtersection ---------------- */
+.filtersection{
+   
+    padding: 25px;
+    background: #ffffff;
+
+
+}
+.filtersection-mobil{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: #fff;
+    display: none;
+    left: 0;
+    margin-top: 1px;
+    padding-top: 9vh;
+    height: 90vh;
+}
+.filtersection-mobil.aktiv{
+  display: unset;  
+}
+/* ---------- SLider ------------- */
+.slide {display: none;}
+.slide.active {display: block;}
+.slide_two {display: none;}
+.slide_two.active {display: block; width: 34%;}
+
+
+
+/* -------------- boligside -------------- */
+.boligfakta{
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 0 5vh 0;
+}
+.boligfakta h1{
+    font-size: 1.8rem;
+}
+.boligfakta p{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+.boligfaktauno{
+    margin: 0 5% auto auto;
+}
+.boligfaktados{
+    margin: auto auto auto 5%;
+}
+.boligfaktados a{
+    text-decoration: none;
+}
+.faktacheckbox{
+    display: flex;
+    padding-top: 5vh;
+}
+.faktacheckbox ul li{
+    list-style-type: none;
+    display: flex;
+}
+.faktacheckbox ul li p{
+    color:#000000;
+    padding: 3px;
+}
+.faktacheckbox ul li img{
+    width: 1.2rem;
+}
+.secbackground {
+    background: #fafafafa;
+}
+.faktaboxinfo{
+    display: flex;
+    justify-content: space-between;
+}
+.faktaboxinfoprmåned{
+    background: #52A1E6;
+    color: #fafafa;
+    text-align: center;
+    padding: 25px;
+}
+.tilmedkøbox{
+    background:#92BA17;
+    color: #fafafa;
+    text-align: center;
+    padding: 25px;
+}
+.faktaomområdebox{
+    background: #fafafa;
+    margin: auto;
+    padding: 3vw;
+}
+.googlemaps{
+    height: 60vh;
+    margin: 6vw;
+}
+.kortventidtitel{
+    text-align: center;
+}
+/* -------------- Media Query --------------- */
+@media only screen and (max-width: 500px) {
+    body {
+    
+    }
+    main{
+        margin: 1px;
+    }
+    .boligerside{
+        padding-top: 20vh;
+    }
+    .mobilfilter{
+        display: block;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .søgboligcontainer{
+        flex-direction: column;
+    }
+    .filtersection{
+        display: none;
+    }
+    .boligmulighed{
+        width: unset;
+    }
+    .containerQER{
+        flex-direction: column;
+    }
+    .nyheder, .kontakt{
+        width: 70vw;
+    }
+    .nyheder{
+        margin: auto auto 15px auto;
+    }
+    .kontakt{
+        margin: auto auto 15px auto;
+    }
+    .brugersideboliger{
+        flex-direction: column;
+    }
+    .jabutton, .nejbutton, .købutton{
+        width: 40%;
+    }
+    .searchfield{
+        width: 95vw;
+    }
+    .slide_two.active {
+        width: 100%;
+    }
+    .boligfakta{
+        flex-direction: column;
+    }
+    .faktacheckbox{
+        flex-direction: column;
+    }
+    .boligfaktados{
+        margin: 5vh auto auto auto;
+    }
+    .modalIndhold{
+        margin: 10vh auto;
+        height: 70vh;
+    }
+    .boligfakta p{
+        font-size: 1.2rem;
+    }
+    .boligfakta h1{
+        font-size: 1.4rem;
+    }
+    .boldparagraph{
+        display: none;
+    }
+  }

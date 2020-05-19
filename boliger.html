@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salus-bolig</title>
+    <link rel="stylesheet" href="./Styling/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+  <!---       Header logo ikon, login ikon, burger ikon         --->
+        <a href="./forside.html"><img src="./svg/AiSalus-logo-reklamehuset.svg" alt="logo"></a>
+           <section class="login"><p>log ind</p> <img src="./svg/bruger.svg" alt=""></section>
+           <section class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+           </section>  
+ <!---      Gemt navigation bar med links               --->
+        <nav class="menu">
+            <li><a href="./boliger.html"><h2>Søg Bolig</h2></a></li>
+            <li><a href="./brugerside.html"><h2>Opret Ansøger</h2></a></li>
+            <li><a href="./spørgsmålogsvar.html"><h2>Spørgsmål og svar</h2></a></li>
+        </nav>
+<!---           Mobil phone filter            -->
+        <button class="mobilfilter">
+            <h1 class="whitestyle">Tilpas Søgning</h1>   
+          </button>
+          <section class="filtersection-mobil">
+            <section>
+                <h1 class="siblingstructure">Område <img class="arrow" src="./svg/down.svg" alt=""></h1>
+                <ul class="filtercontainer">
+                    <li class="checkboxstructure"><label for="Sønderborg">Sønderborg</label> <input id="Sønderborg" name="Sønderborg" value="Sønderborg" type="checkbox"></li>
+                    <li class="checkboxstructure"><label for="Aabenraa">Aabenraa</label> <input id="Aabenraa" name="Aabenraa" value="Aabenraa" type="checkbox"></li>
+                    <li class="checkboxstructure"><label for="Gråsten">Gråsten</label> <input id="Gråsten" name="Gråsten" value="Gråsten" type="checkbox"></li>
+                    <li class="checkboxstructure"><label for="Tønder">Tønder</label> <input id="Tønder" name="Tønder" value="Tønder" type="checkbox"></li>
+                    <li class="checkboxstructure"><label for="Toftlund">Toftlund</label> <input id="Toftlund" name="Toftlund" value="Toftlund" type="checkbox"></li>
+                    <li class="checkboxstructure"><label for="Skærbæk">Skærbæk</label> <input id="Skærbæk" name="Skærbæk" value="Skærbæk" type="checkbox"></li>
+                </ul>
+            </section>
+            <section>
+             <h1 class="siblingstructure">Bolig type <img class="arrow" src="./svg/down.svg" alt=""></h1>
+             <ul class="filtercontainer">
+                 <li class="checkboxstructure"><label for="Kort-ventetid">Kort ventetid</label> <input id="Kort-ventetid" name="Kort-ventetid" value="Kort-ventetid" type="checkbox"></li>
+                 <li class="checkboxstructure"><label for="Familiebolig">Familiebolig</label> <input id="Familiebolig" name="Familiebolig" value="Familiebolig" type="checkbox"></li>
+                 <li class="checkboxstructure"><label for="Seniorbolig">Seniorbolig</label> <input id="Seniorbolig" name="Seniorbolig" value="Seniorbolig" type="checkbox"></li>
+                 <li class="checkboxstructure"><label for="Ungdomsbolig">Ungdomsbolig</label> <input id="Ungdomsbolig" name="Ungdomsbolig" value="Ungdomsbolig" type="checkbox"></li>
+             </ul>
+         </section>
+         <section>
+             <h1 class="siblingstructure">Faciliteter <img class="arrow" src="./svg/down.svg" alt=""></h1>
+             <ul class="filtercontainer">
+                 <li class="checkboxstructure"><label for="Rækkehus-hus">Rækkehus/hus</label> <input id="Rækkehus-hus" name="Rækkehus-hus" value="Rækkehus-hus" type="checkbox"></li>
+                 <li class="checkboxstructure"><label for="Have">Have</label> <input id="Have" name="Have" value="Have" type="checkbox"></li>
+                 <li class="checkboxstructure"><label for="Altan">Altan</label> <input id="Altan" name="Altan" value="Altan" type="checkbox"></li>
+                 <li class="checkboxstructure"><label for="Elevator">Elevator</label> <input id="Elevator" name="Elevator" value="Elevator" type="checkbox"></li>
+                 <li class="checkboxstructure"><label for="Husdyr">Husdyr</label> <input id="Husdyr" name="Husdyr" value="Husdyr" type="checkbox"></li>
+             </ul>
+         </section>
+         <section class="rum-value-container">
+             <h1>Rum</h1><p>value</p>
+         </section>
+         <input type="range" min="1" max="6" value="1">
+         <section class="rum-value-container">
+             <h1>Husleje</h1><p>value</p>
+         </section>
+         <input type="range" min="1" max="8000" value="1">
+         <section class="rum-value-container"> 
+             <h1>Etage</h1><p>value</p>
+         </section>
+         <input type="range" min="1" max="10" value="1">
+         <section class="rum-value-container">
+             <h1>m2</h1><p>value</p>
+         </section>
+         <input type="range" min="1" max="180" value="1">
+          <script src="./Script/burger.js"></script> 
+    </header>
+  <!---     Gemt log ind screen               --->  
+    <aside class="modal">
+        <section class="modalIndhold">
+           <h1 class="logintitle">Log ind</h1>
+           <input type="text" placeholder="Opnoteringsnr">
+           <input type="text" placeholder="Pinkode">
+           <button class="loginbutton"><h1>Log Ind</h1></button>
+           <button class="tilmeldbutton"><h1>Tilmeld</h1></button>
+           <script src="./script/login-screen.js"></script>
+        </section> 
+    </aside>
+<!---     Hovedindhold          --->  
+    <main class="boligerside">
+
+        <section class="søgboligcontainer">
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+            <section class="boligmulighed hovertransform">
+                <a href="./boligmulighed.html">
+                    <img src="./billeder/1.jpeg" alt="bolig">
+                    <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+                    <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+                    <p class="boligpris">4.085,- </p>
+                </a>
+               
+            </section>
+        </section>
+
+<!--          Filter                                       -->
+        <section class="filtersection">
+           <section>
+               <h1 class="siblingstructure">Område <img class="arrow" src="./svg/down.svg" alt=""></h1>
+               <ul class="filtercontainer">
+                   <li class="checkboxstructure"><label for="Sønderborg">Sønderborg</label> <input id="Sønderborg" name="Sønderborg" value="Sønderborg" type="checkbox"></li>
+                   <li class="checkboxstructure"><label for="Aabenraa">Aabenraa</label> <input id="Aabenraa" name="Aabenraa" value="Aabenraa" type="checkbox"></li>
+                   <li class="checkboxstructure"><label for="Gråsten">Gråsten</label> <input id="Gråsten" name="Gråsten" value="Gråsten" type="checkbox"></li>
+                   <li class="checkboxstructure"><label for="Tønder">Tønder</label> <input id="Tønder" name="Tønder" value="Tønder" type="checkbox"></li>
+                   <li class="checkboxstructure"><label for="Toftlund">Toftlund</label> <input id="Toftlund" name="Toftlund" value="Toftlund" type="checkbox"></li>
+                   <li class="checkboxstructure"><label for="Skærbæk">Skærbæk</label> <input id="Skærbæk" name="Skærbæk" value="Skærbæk" type="checkbox"></li>
+               </ul>
+           </section>
+           <section>
+            <h1 class="siblingstructure">Bolig type <img class="arrow" src="./svg/down.svg" alt=""></h1>
+            <ul class="filtercontainer">
+                <li class="checkboxstructure"><label for="Kort-ventetid">Kort ventetid</label> <input id="Kort-ventetid" name="Kort-ventetid" value="Kort-ventetid" type="checkbox"></li>
+                <li class="checkboxstructure"><label for="Familiebolig">Familiebolig</label> <input id="Familiebolig" name="Familiebolig" value="Familiebolig" type="checkbox"></li>
+                <li class="checkboxstructure"><label for="Seniorbolig">Seniorbolig</label> <input id="Seniorbolig" name="Seniorbolig" value="Seniorbolig" type="checkbox"></li>
+                <li class="checkboxstructure"><label for="Ungdomsbolig">Ungdomsbolig</label> <input id="Ungdomsbolig" name="Ungdomsbolig" value="Ungdomsbolig" type="checkbox"></li>
+            </ul>
+        </section>
+        <section>
+            <h1 class="siblingstructure">Faciliteter <img class="arrow" src="./svg/down.svg" alt=""></h1>
+            <ul class="filtercontainer">
+                <li class="checkboxstructure"><label for="Rækkehus-hus">Rækkehus/hus</label> <input id="Rækkehus-hus" name="Rækkehus-hus" value="Rækkehus-hus" type="checkbox"></li>
+                <li class="checkboxstructure"><label for="Have">Have</label> <input id="Have" name="Have" value="Have" type="checkbox"></li>
+                <li class="checkboxstructure"><label for="Altan">Altan</label> <input id="Altan" name="Altan" value="Altan" type="checkbox"></li>
+                <li class="checkboxstructure"><label for="Elevator">Elevator</label> <input id="Elevator" name="Elevator" value="Elevator" type="checkbox"></li>
+                <li class="checkboxstructure"><label for="Husdyr">Husdyr</label> <input id="Husdyr" name="Husdyr" value="Husdyr" type="checkbox"></li>
+            </ul>
+        </section>
+        <section class="rum-value-container">
+            <h1>Rum</h1><p>value</p>
+        </section>
+        <input type="range" min="1" max="6" value="1">
+        <section class="rum-value-container">
+            <h1>Husleje</h1><p>value</p>
+        </section>
+        <input type="range" min="1" max="8000" value="1">
+        <section class="rum-value-container"> 
+            <h1>Etage</h1><p>value</p>
+        </section>
+        <input type="range" min="1" max="10" value="1">
+        <section class="rum-value-container">
+            <h1>m2</h1><p>value</p>
+        </section>
+        <input type="range" min="1" max="180" value="1">
+          </section>
+    </main>
+    <script src="./script/mobilfilter.js"></script>
+    <footer>
+        <article>
+            <h1>SALUS Boligadministration</h1>
+            <p>Sønderborg Andelsboligforening <br>
+               Gråsten Andelsboligforening <br>
+               Aabenraa Andelsboligforening <br>
+               Skærbæk Boligforening <br>
+               Toftlund Andels Boligforening <br>
+               Kolstrup Boligforening <br>
+               Tønder Andelsboligforening <br>
+               Boligselskabet DANBO <br>
+               </p>
+        </article>
+        <article>
+            <h1>SALUS</h1>
+            <p>Egevej 9 <br>
+               6200 Aabenraa <br>
+               <br>
+               Personlig henvendelse vedr. udlejning <br> skal ske 
+                på vores lokalkontorer <br>
+               <br>
+               Telefon:	73 45 65 00 <br>
+               Email:	salus@salus-bolig.dk <br>
+               </p>
+        </article>
+        <article>
+            <h1>DAGLIG ÅBNINGSTID</h1>
+            <p>Mandag - Tirsdag	 kl. 10.00 - 14.00 <br>
+               Onsdag	Lukket <br>
+               Torsdag	 kl. 10.00 - 17.00 <br>
+               Fredag	 kl. 10.00 - 12.00</p>
+        </article>
+    </footer>
+
+</body>
+</html>

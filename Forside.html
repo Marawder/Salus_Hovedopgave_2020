@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salus-bolig</title>
+    <link rel="stylesheet" href="./Styling/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+  <!---       Header logo ikon, login ikon, burger ikon         --->
+        <a href="./forside.html"><img src="./svg/AiSalus-logo-reklamehuset.svg" alt="logo"></a>
+           <section class="login"><p>log ind</p> <img src="./svg/bruger.svg" alt=""></section>
+           <section class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+           </section>  
+ <!---      Gemt navigation bar med links               --->
+        <nav class="menu">
+            <li><a href="./boliger.html"><h2>Søg Bolig</h2></a></li>
+            <li><a href="./brugerside.html"><h2>Opret Ansøger</h2></a></li>
+            <li><a href="./spørgsmålogsvar.html"><h2>Spørgsmål og svar</h2></a></li>
+        </nav>
+        <script src="./Script/burger.js"></script> 
+    </header>
+  <!---     Gemt log ind screen               --->  
+    <aside class="modal">
+        <section class="modalIndhold">
+           <h1 class="logintitle">Log ind</h1>
+           <input type="text" placeholder="Opnoteringsnr">
+           <input type="text" placeholder="Pinkode">
+           <button class="loginbutton"><h1>Log Ind</h1></button>
+           <button class="tilmeldbutton"><h1>Tilmeld</h1></button>
+           <script src="./script/login-screen.js"></script>
+        </section> 
+    </aside>
+<!---     Hovedindhold          --->  
+    <main>
+        <img class="frontpagelogo" src="./svg/Logo-SALUS-transperent.svg" alt="logo">
+        <input class="searchfield" type="text" placeholder="Hvor vil du gerne bo ?">
+        <h1 class="forsidetitels">Områder</h1>
+<!---     Searchbuttons                  -->
+        <section class="searchbuttons">
+            <button class="hovertransform"><a href="./boliger.html"><h1 class="area">Sønderborg</h1></a></button>
+            <button class="hovertransform"><a href="./boliger.html"><h1 class="area">Aabernraa</h1></a></button>
+            <button class="hovertransform"><a href="./boliger.html"><h1 class="area">Gråsten</h1></a></button>
+            <button class="hovertransform"><a href="./boliger.html"><h1 class="area">Tønder</h1></a></button>
+            <button class="hovertransform"><a href="./boliger.html"><h1 class="area">Toftlund</h1></a></button>
+            <button class="hovertransform"><a href="./boliger.html"><h1 class="area">Skærbæk</h1></a></button>
+        </section>
+        <hr>
+        <h1 class="forsidetitels">Boliger med kort ventetid</h1>
+<!--    Tanken var at i widescreen og ipad størelse skulle der være 3 vist i slideren og når den kommer til mobil så kun 1, ideen var også at media query skulle håndere hvor mange er displayed, prøvede at arbejde 
+ud fra et gammelt eksemplar jeg havde fra hovedopgave, men kunne ikke få tænkt ind hvordan jeg får den til at visse 3 elementer på widescreen, og kun 1 element på mobile -->
+<section class="kortventetid slider">
+    <img class="boligprev slider__button-previous hovertransform" src="./svg/prev.svg" alt="prev">
+    <section class="boligmulighed slide hovertransform">
+        <a href="./boligmulighed.html">
+            <img src="./billeder/1.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+       
+    </section>
+    <section class="boligmulighed slide none hovertransform ">
+        <a href="./boligmulighed.html">
+            <img  src="./billeder/2.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+    </section>
+    <section class="boligmulighed slide none hovertransform">
+        <a href="./boligmulighed.html">
+            <img src="./billeder/3.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+    </section>
+    <section class="boligmulighed none slide hovertransform">
+        <a href="./boligmulighed.html">
+            <img src="./billeder/4.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+       
+    </section>
+    <section class="boligmulighed none slide hovertransform">
+        <a href="./boligmulighed.html">
+            <img src="./billeder/5.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+       
+    </section>
+    <section class="boligmulighed none slide hovertransform">
+        <a href="./boligmulighed.html">
+            <img src="./billeder/6.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+       
+    </section>
+    <section class="boligmulighed none slide hovertransform">
+        <a href="./boligmulighed.html">
+            <img src="./billeder/7.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+       
+    </section>
+    <img class="bolignext slider__button-next hovertransform" class="" src="./svg/next.svg" alt="next">
+</section>
+        <script src="./script/slider.js"></script>
+
+        <section class="containerQER">
+            <section class="nyheder">
+                <h1>Nyheder</h1>
+                <a href="#">03-03-2020 Stillingsopslag: Ejendomsfunktionær/gårdmand </a>
+                <a href="#">23-10-2019 Vi får nyt telefonsystem</a>
+            </section>
+            <section class="kontakt">
+                <h1>Kontakt</h1>
+                   <!-- <img src="./svg/phone.svg" alt="phone"> -->
+               <h1> +45 73 45 65 00</h1>
+               <h1>salus@salus-bolig.dk</h1>
+                    <p>
+                    Personlig henvendelse om
+                    udlejning af boliger skal ske
+                    til vores lokalkontorer.
+                    </p>
+            </section>
+        </section>
+    
+    </main>
+    <footer>
+        <article>
+            <h1>SALUS Boligadministration</h1>
+            <p>Sønderborg Andelsboligforening <br>
+               Gråsten Andelsboligforening <br>
+               Aabenraa Andelsboligforening <br>
+               Skærbæk Boligforening <br>
+               Toftlund Andels Boligforening <br>
+               Kolstrup Boligforening <br>
+               Tønder Andelsboligforening <br>
+               Boligselskabet DANBO <br>
+               </p>
+        </article>
+        <article>
+            <h1>SALUS</h1>
+            <p>Egevej 9 <br>
+               6200 Aabenraa <br>
+               <br>
+               Personlig henvendelse vedr. udlejning <br>
+                skal ske på vores lokalkontorer <br>
+               <br>
+               Telefon:	73 45 65 00 <br>
+               Email:	salus@salus-bolig.dk <br>
+               </p>
+        </article>
+        <article>
+            <h1>DAGLIG ÅBNINGSTID</h1>
+            <p>Mandag - Tirsdag	 kl. 10.00 - 14.00 <br>
+               Onsdag	Lukket <br>
+               Torsdag	 kl. 10.00 - 17.00 <br>
+               Fredag	 kl. 10.00 - 12.00</p>
+        </article>
+    </footer>
+
+</body>
+</html>

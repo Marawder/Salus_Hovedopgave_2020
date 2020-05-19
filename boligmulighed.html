@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salus-bolig</title>
+    <link rel="stylesheet" href="./Styling/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+  <!---       Header logo ikon, login ikon, burger ikon         --->
+        <a href="./forside.html"><img src="./svg/AiSalus-logo-reklamehuset.svg" alt="logo"></a>
+           <section class="login"><p>log ind</p> <img src="./svg/bruger.svg" alt=""></section>
+           <section class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+           </section>  
+ <!---      Gemt navigation bar med links               --->
+        <nav class="menu">
+            <li><a href="./boliger.html"><h2>Søg Bolig</h2></a></li>
+            <li><a href="./brugerside.html"><h2>Opret Ansøger</h2></a></li>
+            <li><a href="./spørgsmålogsvar.html"><h2>Spørgsmål og svar</h2></a></li>
+        </nav>
+        <script src="./Script/burger.js"></script> 
+    </header>
+  <!---     Gemt log ind screen               --->  
+    <aside class="modal">
+        <section class="modalIndhold">
+           <h1 class="logintitle">Log ind</h1>
+           <input type="text" placeholder="Opnoteringsnr">
+           <input type="text" placeholder="Pinkode">
+           <button class="loginbutton"><h1>Log Ind</h1></button>
+           <button class="tilmeldbutton"><h1>Tilmeld</h1></button>
+           <script src="./script/login-screen.js"></script>
+        </section> 
+    </aside>
+<!---     Hovedindhold          --->  
+    <main class="boligmulighed_indhold">
+      
+<section class="boligbilleder slider_two ">
+    <img class="boligprev slider__button-previous_two hovertransform" src="./svg/prev.svg" alt="prev">
+    <section class="boligbilleder_indhold slide_two">
+            <img src="./billeder/1.jpeg" alt="bolig">
+    </section>
+    <section class="boligbilleder_indhold slide_two none">
+            <img src="./billeder/2.jpeg" alt="bolig">
+    </section>
+    <section class="boligbilleder_indhold slide_two none"> 
+            <img src="./billeder/3.jpeg" alt="bolig">
+    </section>
+    <section class="boligbilleder_indhold none slide_two">
+            <img src="./billeder/4.jpeg" alt="bolig">
+    </section>
+    <section class="boligbilleder_indhold none slide_two">
+            <img src="./billeder/5.jpeg" alt="bolig">   
+    </section>
+    <section class="boligbilleder_indhold none slide_two">
+            <img src="./billeder/6.jpeg" alt="bolig">
+    </section>
+    <section class="boligbilleder_indhold none slide_two">
+            <img src="./billeder/7.jpeg" alt="bolig">
+    </section>
+    <img class="bolignext slider__button-next_two hovertransform" class="" src="./svg/next.svg" alt="next">
+    <script src="./script/slidertwo.js"></script>
+</section>
+
+<section class="boligfakta">
+    <section class="boligfaktauno">
+        <h1>3 værelses lejlighed på 80 m²</h1>
+        <h1>Rojumvej 2 1 th, 6400 Sønderborg</h1>
+        <section class="faktacheckbox">
+            <ul>
+                <li><img src="./svg/crossno.svg" alt=""><p>Rækkehus/hus</p></li>
+                <li class="secbackground"><img src="./svg/crossno.svg" alt=""><p>Have</p></li>
+                <li><img src="./svg/crossno.svg" alt=""><p>Hund Tilladt</p></li>
+                <li class="secbackground"><img src="./svg/crossno.svg" alt=""><p>Udv. Trapper</p></li>
+                <li><img src="./svg/crossno.svg" alt=""><p>Dørtelefon</p></li>
+                <li class="secbackground"><img src="./svg/crossno.svg" alt=""><p>Komfur</p></li>
+                <li><img src="./svg/crossno.svg" alt=""><p>Køleskab</p></li>   
+            </ul>
+            <ul>
+                <li><img src="./svg/checkyes.svg" alt=""><p>Etagebyggeri</p></li>
+                <li class="secbackground"><img src="./svg/crossno.svg" alt=""><p>Altan</p></li>
+                <li><img src="./svg/crossno.svg" alt=""><p>Kat Tilladt</p></li>
+                <li class="secbackground"><img src="./svg/crossno.svg" alt=""><p>Garage</p></li>
+                <li><img src="./svg/crossno.svg" alt=""><p>Emhætte</p></li>
+                <li class="secbackground"><img src="./svg/crossno.svg" alt=""><p>Kogeplader</p></li>
+            </ul>
+            <ul>
+                <li><img src="./svg/crossno.svg" alt=""><p>Elevator</p></li>
+                <li class="secbackground"><img src="./svg/crossno.svg" alt=""><p>Ingen Trapper</p></li>
+                <li><img src="./svg/checkyes.svg" alt=""><p>Depotrum</p></li>
+                <li class="secbackground"><img src="./svg/checkyes.svg" alt=""><p>Kabeltv</p></li>
+                <li><img src="./svg/crossno.svg" alt=""><p>Vaskemaskine</p></li>
+                <li class="secbackground"><img src="./svg/crossno.svg" alt=""><p>Køl- / Frys</p></li>
+            </ul>
+        </section>
+    </section>
+        <section class="boligfaktados">
+            <h1 class="faktaboxinfoprmåned">4.085,00 kr/md.</h1>
+            <ul>
+                <li class="faktaboxinfo"><p>Antal værelser: </p><p>3</p></li>
+                <li class="faktaboxinfo secbackground"><p>Areal:</p><p>73m2</p></li>
+                <li class="faktaboxinfo"><p>Indskud/depositum:</p><p>15.750,00 kr</p></li>
+                <li class="faktaboxinfo secbackground"><p>Netto husleje:</p><p>4.085,00 kr</p></li>
+                <li class="faktaboxinfo"><p>Aconto varme:</p><p>675,00 kr</p></li>
+                <li class="faktaboxinfo secbackground"><p>Aconto el:</p><p> *0,00 kr</p></li>
+                <li class="faktaboxinfo"><p>Aconto vand:</p><p>*0,00 kr</p></li>
+                <li class="faktaboxinfo secbackground"><h1>Samlet husleje:</h1><h1>4.760,00 kr</h1></li>
+            </ul>
+            <a  href="./brugerside.html"><h1 class="tilmedkøbox ">Tilmeld kø</h1></a>
+        </section>
+
+
+</section>
+<section class="faktaomområdebox">
+    <h1>Information om afdelingen</h1>
+    <p>Afdelingen består af 51 etageboliger - opført 1942. Afdelingen er beliggende tæt ved centrum, 
+        børnehave, skole og indkøbsmuligheder.</p>
+    <br>
+    <h1>Carport / Garage</h1>
+    <p>Afdelingen råder over 1 garage.</p>
+    <br>
+    <h1>Hårde hvidevarer</h1>
+    <p>Ingen. Dog er der køleskab i boligerne Ringgade 151og Goethesgade </p>
+    <br>
+    <h1>Forsyning</h1>
+    <p>Fjernvarme. Varmeforbrug afregnes med boligforeningen.
+        Elforbrug afregnes direkte med el-selskabet.</p>
+    <br>
+    <h1>Fællesvaskeri</h1>
+    <p>Der er fællesvaskeri.</p>
+    <br>
+    <h1>Husdyrhold</h1>
+    <p>Husdyrhold er ikke tilladt.</p>
+    <br>
+    <h1>Affaldssortering</h1>
+    <p>Affaldssortering ifølge den kommunale ordning.</p>
+</section>
+
+<section class="googlemaps" id="googleMap">
+
+    <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(51.508742,-0.120850),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        </script>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrbVPn2JbYmubLUYt3DnMdU-G48eYQWyA&callback=myMap"></script>
+        
+</section>
+<h1 class="kortventidtitel">Lignende Boliger</h1>
+<section class="kortventetid slider">
+    <img class="boligprev slider__button-previous hovertransform" src="./svg/prev.svg" alt="prev">
+    <section class="boligmulighed slide hovertransform">
+        <a href="#">
+            <img src="./billeder/1.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+       
+    </section>
+    <section class="boligmulighed slide none hovertransform">
+        <a href="#">
+            <img src="./billeder/2.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+    </section>
+    <section class="boligmulighed slide none hovertransform">
+        <a href="#">
+            <img src="./billeder/3.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+    </section>
+    <section class="boligmulighed none slide hovertransform">
+        <a href="#">
+            <img src="./billeder/4.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+       
+    </section>
+    <section class="boligmulighed none slide hovertransform">
+        <a href="#">
+            <img src="./billeder/5.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+       
+    </section>
+    <section class="boligmulighed none slide hovertransform">
+        <a href="#">
+            <img src="./billeder/6.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+       
+    </section>
+    <section class="boligmulighed none slide hovertransform">
+        <a href="#">
+            <img src="./billeder/7.jpeg" alt="bolig">
+            <p class="boldparagraph">3 værelses lejlighed på 80 m²</p>
+            <p>Rojumvej 2 1 th, 6400 Sønderborg</p>
+            <p class="boligpris">4.085,- </p>
+        </a>
+       
+    </section>
+    <img class="bolignext slider__button-next hovertransform" class="" src="./svg/next.svg" alt="next">
+</section>
+        <script src="./script/slider.js"></script>     
+    
+    </main>
+    <footer>
+        <article>
+            <h1>SALUS Boligadministration</h1>
+            <p>Sønderborg Andelsboligforening <br>
+               Gråsten Andelsboligforening <br>
+               Aabenraa Andelsboligforening <br>
+               Skærbæk Boligforening <br>
+               Toftlund Andels Boligforening <br>
+               Kolstrup Boligforening <br>
+               Tønder Andelsboligforening <br>
+               Boligselskabet DANBO <br>
+               </p>
+        </article>
+        <article>
+            <h1>SALUS</h1>
+            <p>Egevej 9 <br>
+               6200 Aabenraa <br>
+               <br>
+               Personlig henvendelse vedr. udlejning <br>
+                skal ske på vores lokalkontorer <br>
+               <br>
+               Telefon:	73 45 65 00 <br>
+               Email:	salus@salus-bolig.dk <br>
+               </p>
+        </article>
+        <article>
+            <h1>DAGLIG ÅBNINGSTID</h1>
+            <p>Mandag - Tirsdag	 kl. 10.00 - 14.00 <br>
+               Onsdag	Lukket <br>
+               Torsdag	 kl. 10.00 - 17.00 <br>
+               Fredag	 kl. 10.00 - 12.00</p>
+        </article>
+    </footer>
+
+</body>
+</html>
